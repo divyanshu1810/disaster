@@ -552,12 +552,12 @@
 
     <script>
         // Configuration
-        const API_BASE = 'http://localhost:5000/api';
+        const API_BASE = 'https://disaster-0qqq.onrender.com/api';
         const currentUser = 'netrunnerX'; // Default user for testing
         
         // Initialize Socket.IO
         const socket = io(
-            'ws://localhost:5000',
+            'wss://disaster-0qqq.onrender.com',
             {
                 transports: ['websocket'],
                 query: { user_id: currentUser }
